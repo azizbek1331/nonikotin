@@ -1,0 +1,241 @@
+.advantage {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    background-color: #317773;
+}
+
+h1 {
+    font-size: 55px;
+}
+
+strong {
+    font-size: 20px;
+}
+
+.edge-head {
+    width: 90%;
+    height: 85.5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+    border: 2px solid green;
+}
+
+.edge-group {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: 2px solid pink;
+}
+
+.begin-phone {
+    width: 60px;
+    height: 62px;
+}
+
+.begin-teloch {
+    width: 100px;
+    height: 70px;
+}
+
+.begin-ios {
+    width: 60px;
+    height: 62px;
+}
+
+.edge-begin h2 {
+    margin: 0;
+    font-size: 35px;
+}
+
+.edge-begin p {
+    margin: 0;
+    font-size: 24px;
+}
+
+.edge-second h2 {
+    margin: 0;
+    font-size: 35px;
+}
+
+.edge-second p {
+    margin: 0;
+    font-size: 24px;
+}
+
+.edge-suit {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid yellow;
+}
+
+.edge-last {
+    width: 495px;
+    height: 40vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* border-radius: 30px; */
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background: #171614;
+    background: linear-gradient(50deg, #2a5);
+    overflow: hidden;
+}
+
+.edge-second {
+    width: 495px;
+    height: 40vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: #daad86;
+    background: #171614;
+    background: linear-gradient(50deg, #2a5);
+    overflow: hidden;
+}
+
+.edge-begin {
+    width: 500px;
+    height: 40vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: #daad86;
+    background: #171614;
+    background: linear-gradient(50deg, #2a5);
+    overflow: hidden;
+}
+
+.edge-begin::before {
+    content: "";
+    position: absolute;
+    overflow: hidden;
+    width: 700px;
+    height: 20px;
+    top: -40px;
+    right: 10px;
+    transition: 1.9s;
+    background: linear-gradient(50deg, #00ff59, #02b3ff);
+    transform: rotate(-45deg) translate(0, -100px);
+}
+
+.edge-second::before {
+    content: "";
+    position: absolute;
+    overflow: hidden;
+    width: 700px;
+    height: 20px;
+    top: -40px;
+    right: 10px;
+    transition: 1.9s;
+    background: linear-gradient(50deg, #00ff59, #02b3ff);
+    transform: rotate(-45deg) translate(0, -100px);
+}
+
+.edge-last::before {
+    content: "";
+    position: absolute;
+    overflow: hidden;
+    width: 700px;
+    height: 20px;
+    top: -40px;
+    right: 10px;
+    transition: 1.9s;
+    background: linear-gradient(50deg, #00ff59, #02b3ff);
+    transform: rotate(-45deg) translate(0, -100px);
+}
+
+.last-into {
+    width: 490px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 2px 2px 2px 2px;
+    z-index: 1;
+    background: #171614;
+    overflow: hidden;
+    transition: 2.5s ease;
+}
+
+.begin-into {
+    width: 495px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 2px 2px 2px 2px;
+    z-index: 1;
+    background: #171614;
+    overflow: hidden;
+    transition: 2.5s ease;
+}
+
+.second-into {
+    width: 490px;
+    height: 290px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 2px 2px 2px 2px;
+    z-index: 1;
+    background: #171614;
+    overflow: hidden;
+    transition: 2.5s ease;
+}
+
+.last-into:hover {
+    color: #ffff;
+}
+
+.begin-into:hover {
+    color: #ffff;
+}
+
+.second-into:hover {
+    color: #ffff;
+}
+
+.edge-begin:hover::before {
+    animation: effect 2.5s;
+}
+
+.edge-second:hover::before {
+    animation: effect 2.5s;
+}
+
+.edge-last:hover::before {
+    animation: effect 2.5s;
+}
+
+@keyframes effect {
+    100% {
+        transform: rotate(-45deg) translate(0, 550px);
+    }
+}
+
+.edge-last h2 {
+    margin: 0;
+    font-size: 35px;
+}
+
+.edge-last p {
+    margin: 0;
+    font-size: 24px;
+}

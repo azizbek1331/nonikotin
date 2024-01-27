@@ -1,0 +1,48 @@
+.carousel {
+  width: 600px;
+  height: 380px;
+  margin: auto;
+}
+
+.carousel-control-prev {
+  height: 300px;
+}
+
+.carousel-control-next {
+  height: 300px;
+}
+
+.carousel .carousel-control-prev-icon {
+  visibility: hidden;
+}
+
+.carousel:hover .carousel-control-prev-icon {
+  visibility: visible;
+}
+
+.carousel .carousel-control-next-icon {
+  visibility: hidden;
+}
+
+.carousel:hover .carousel-control-next-icon {
+  visibility: visible;
+}
+
+.ondiv {
+  width: 50%;
+  height: 50vh;
+  border: 2px solid red;
+  display: flex;
+  flex-direction: row;
+}
+
+.ondiv-main {
+width: 100%;
+height: 100vh;
+display: flex;
+align-items: center;
+background-color:  #E2D1F9;
+display: flex;
+flex-direction: row;
+border: 2px solid yellow;
+}

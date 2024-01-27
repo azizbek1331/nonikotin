@@ -1,0 +1,115 @@
+.card-main {
+    width: 100%;
+    height: 100vh;
+    border: 2px solid blue;
+    background-color: #101820;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card {
+    width: 320px;
+    height: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 8px solid red;
+    position: relative;
+}
+
+.card-img {
+    width: 430px;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 15px;
+    margin-left: -65px;
+    transform-style: preserve-3d;
+    animation: rotate 20s linear infinite;
+}
+
+.card-photo {
+    width: 400px;
+    height: 100%;
+    margin: 50px 0px 0px -60px;
+    /* margin-left: -130px; */
+    object-fit: cover;
+    border-radius: 15px;
+
+    transform-style: preserve-3d;
+    animation: rotate 20s linear infinite;
+}
+
+.card-peinture {
+    width: 500px;
+    height: 100%;
+    margin-left: -90px;
+    object-fit: contain;
+    border-radius: 15px;
+
+    transform-style: preserve-3d;
+    animation: rotate 20s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotateY(0deg);
+    }
+
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+.card-body {
+    width: 82%;
+    height: 100%;
+    top: 0;
+    right: -120%;
+    position: absolute;
+    background: #1f3d4738;
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    color: #fff;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 2s;
+}
+
+.card:hover .card-body {
+    right: 0;
+}
+
+.card-title {
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.card-sub-title {
+    text-transform: capitalize;
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.card-info {
+    font-size: 16px;
+    line-height: 25px;
+    margin: 40px 0;
+    font-weight: 400;
+}
+
+.card-btn {
+    color: #1f3d47;
+    background: #8fabba;
+    padding: 10px 20px;
+    width: 120px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    cursor: pointer;
+}
